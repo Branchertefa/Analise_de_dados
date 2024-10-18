@@ -1,3 +1,5 @@
+import { getCSS } from "./commom.js"
+
 async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
@@ -9,7 +11,10 @@ async function quantidadeUsuarios() {
     {
       x: nomeDasRedes,
       y: quantidadeUsuarios,
-      type: 'bar'
+      type: 'bar',
+      marker: {
+        color: getCSS('--primary-color')
+      }
     }
   ]
   
