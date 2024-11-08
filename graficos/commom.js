@@ -9,4 +9,3 @@ const tickConfig = {
     color: getCSS('--primary-color')
 }
 
-export {getCSS, tickConfig}
