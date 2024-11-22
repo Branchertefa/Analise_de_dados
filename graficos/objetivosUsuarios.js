@@ -7,7 +7,7 @@ async function objetivosUsuarios() {
   
   const data = [
     {
-      labels: objetivosUso,
+      labels: objetivosUsuarios,
       values: quantidadeUsuarios,
       type: 'pie'
     }
@@ -27,4 +27,3 @@ async function objetivosUsuarios() {
   }
   
   objetivosUsuarios()
-  
